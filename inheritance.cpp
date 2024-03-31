@@ -1,3 +1,37 @@
+/*
+This C++ code defines a program that models different types of staff members in an educational institution using inheritance and polymorphism. Here's a breakdown of the classes and their functionalities:
+
+staff Class:
+
+This class serves as a pure virtual base class, meaning it contains at least one pure virtual function (input_data() and display() in this case), making it an abstract class.
+It contains common data members like code (staff code) and name (staff name).
+It has a member function set_data() to set the name and code for a staff member.
+teacher Class:
+
+Inherits from the staff class.
+Adds specific data members like subject and publication.
+Implements the virtual functions input_data() and display(), allowing input and display of teacher-specific data.
+officer Class:
+
+Inherits from the staff class.
+Adds a specific data member grade.
+Implements the virtual functions input_data() and display(), allowing input and display of officer-specific data.
+typist Class:
+
+Inherits from the staff class.
+Adds a specific data member speed.
+Implements the virtual functions input_data() and display(), allowing input and display of typist-specific data.
+casual Class:
+
+Inherits from the typist class.
+Adds specific data members daily and wages.
+Implements the virtual functions input_data() and display(), allowing input and display of casual typist-specific data.
+main() Function:
+
+Instantiates objects of teacher and casual classes.
+Calls input_data() and display() functions for both objects to input data and display it.
+This program demonstrates inheritance where subclasses inherit attributes and behaviors from their base class (staff), and polymorphism is utilized through virtual functions input_data() and display(), allowing different behavior for each subclass when these functions are called
+*/
 
 #include <iostream>
 using namespace std;
